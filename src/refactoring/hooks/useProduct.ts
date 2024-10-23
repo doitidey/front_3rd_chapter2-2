@@ -17,5 +17,9 @@ export const useProducts = (initialProducts: Product[]) => {
     );
   }
 
-  return { products, updateProduct, addProduct: () => undefined };
+  const addProduct = (addProduct: Product) => {
+    setProducts([...products, addProduct]);
+  };
+
+  return { products, updateProduct, addProduct };
 };
