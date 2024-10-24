@@ -65,5 +65,4 @@ export const updateCartItemQuantity = (cart: CartItem[], productId: string, newQ
 		item.product.id === productId ? updateProductQuantity(item, newQuantity) : item
 	);
 	return cartItemList;
-	return [];
 };
